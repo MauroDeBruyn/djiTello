@@ -1,89 +1,42 @@
 <h1 align="center">
-  <a href="#"> 🧩 Project Title </a>
+  <a href="#"> DJI Tello: Code snippets </a>
 </h1>
 
-<p align="center">
-  <a href="https://github.com/MauroDeBruyn/">
-    <img alt="MauroDeBruyn - tempateProject" src="https://img.shields.io/static/v1?label=MauroDeBruyn&message=temlateProject&color=purple&logo=github"></a>
-  </a>
-
-  <img alt="Stars" src="https://img.shields.io/github/stars/MauroDeBruyn/REPO-NAME?style=social">
-  
-  <a href="https://github.com/MauroDeBruyn/REPO-NAME">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/MauroDeBruyn/REPO-NAME">
-  </a>
-</p>
-
 ![Project Banner](./resources/media/banner.png)
+A small collection of Python examples for controlling a DJI Tello drone. These files are intended for demonstrations and classroom exercises.
 
-<h4 align="center"> 
-   Status: 🚧 Work In Progress / ✅ Completed / 🧪 Prototype
-</h4>
+## Contents
+- `basic.py` – Demonstrates basic flight commands such as take-off, movement, rotation, and landing.
+- `video.py` – Opens the Tello video stream, displays the camera image, and shows the battery level. Press `Q` to land and stop the program.
+- `flip.py` – Performs forward, backward, left, and right flips after checking the battery level.
+- `colorDetection.py` – Uses OpenCV to detect a line in the camera image and adjusts the drone's yaw to follow it.
 
-<p align="center">
- <a href="#about">About</a> •
- <a href="#features">Features</a> • 
- <a href="#installation">Installation</a> • 
- <a href="#usage">Usage</a> •  
- <a href="#techstack">Tech Stack</a> • 
- <a href="#roadmap">Roadmap</a> • 
- <a href="#license">License</a> • 
- <a href="#feedback">Feedback</a> • 
- <a href="#author">Author</a>
-</p>
+## Requirements
+- Python 3
+- A DJI Tello or Tello EDU drone
+- A computer with Wi-Fi
+- The following Python packages:
+  - `djitellopy`
+  - `opencv-python` for `video.py` and `colorDetection.py`
 
----
+The `time` module is part of Python and does not need to be installed separately.
 
-## 🧭 About <a name="about"></a>
-_A short summary of your project goes here._  
-Explain **what** it does, **why** you made it, and **who** it’s for.
-
-> Example:  
-> A companion app designed to support a physical or digital game by tracking roles, events, and scores.
-
----
-
-## 🚀 Features <a name="features"></a>
-- ✨ Feature 1 — _Short description_
-- 🧩 Feature 2 — _Short description_
-- ⚙️ Feature 3 — _Short description_
-- 📱 Feature 4 — _Short description_
-
----
-
-## ⚙️ Installation <a name="installation"></a>
+## Installation
+It is recommended to use a virtual environment:
 
 ```bash
-# Clone this repository
-git clone https://github.com/MauroDeBruyn/REPO-NAME.git
-
-# Navigate into the project folder
-cd REPO-NAME
-
-# Install dependencies
-# Example for npm, flutter, python, etc.
-npm install
-# or
-flutter pub get
-# or
-pip install -r requirements.txt
-
-# Run the app
-npm start
-# or
-flutter run
-# or
-python app.py
+python -m venv .venv
 ```
 
----
+## Running an Example
+1. Turn on the Tello drone.
+2. Connect your computer to the Wi-Fi network created by the drone.
+3. Activate the virtual environment, if you created one.
+4. Run one of the examples:
 
-## 🤝 Contributors <a name="contributors"></a>
-
-Thanks to everyone who has contributed to this project!
-
-- **Mauro De Bruyn** – Author / Student – [GitHub](https://github.com/MauroDeBruyn)  
-- **Contributor Name** – Student / Developer – [GitHub](https://github.com/githubusername)  
-- **Contributor Name** – Student / Tester – [GitHub](https://github.com/githubusername)  
-
-> 💡 Add more contributors as needed. Replace "Contributor Name" and GitHub links with actual collaborators.
+```bash
+python basic.py
+python video.py
+python flip.py
+python colorDetection.py
+```

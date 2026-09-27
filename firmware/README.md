@@ -1,9 +1,9 @@
 # 🔌 Firmware
 
-This folder contains the firmware source code and related configuration files.
+This folder contains 4 firmware code snippets.
 
-- Microcontroller code  
-- Build instructions  
-- Firmware documentation  
+- basic - Simple movement commands to get started.
+- colorDetection - This code will recognise a line using the camera and follow this line.
+- flip - Performs a series of flips.
+- video - simple code to demo the camera using openCV.
 
-> This folder ensures all embedded software stays organized.
